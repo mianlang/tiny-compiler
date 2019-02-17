@@ -12,4 +12,10 @@ function compiler(input) {
   return output;
 }
 
-module.exports = compiler;
+module.exports = {
+  tokenizer,
+  parser,
+  transformer,
+  codeGenerator,
+  compiler,
+};
