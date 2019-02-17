@@ -27,7 +27,11 @@ const testTransformer = (ast, key) => {
   return newAst;
 };
 
-let data = ['(concat "foo" "bar")', '(add 2 (subtract 4 2))', '(add 1 1)(add 2 3)'];
+let data = [
+  '(concat "foo" "bar")',
+  '(add 2 (subtract 4 2))',
+  '(add 1 1)(add 2 3)',
+];
 
 data
   .map(testTokenizer)

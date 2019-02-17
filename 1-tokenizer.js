@@ -58,7 +58,7 @@ function tokenizer(input) {
       continue;
     }
 
-    const LETTERS = /[a-z]/i;
+    const LETTERS = /[a-z.]/i;
     if (LETTERS.test(char)) {
       let value = '';
       do {
